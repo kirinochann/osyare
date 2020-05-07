@@ -1,0 +1,78 @@
+ul {
+  counter-reset: number;
+  list-style-type: none !important;
+  padding: 0.3em 0.8em;
+  border: solid 2px #ffb107;
+}
+ul li {
+  border-bottom: dashed 1px orange;
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 30px;
+  line-height: 1.5em;
+  color: #f8e80a;
+}
+ul li:before {
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+
+  display: inline-block;
+  background: #ffb107;
+  color: white;
+  font-family: "Avenir", "Arial Black", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 50%;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+ul li:last-of-type {
+  border-bottom: none;
+}
+
+body {
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1588625311266-e814b162660e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80");
+}
+h1 {
+  color: #10fa8d; /*文字色*/
+  padding: 0.5em 0; /*上下の余白*/
+  border-top: solid 3px #10fa8d; /*上線*/
+  border-bottom: solid 3px #10fa8d; /*下線*/
+}
+h2 {
+  color: rgb(101, 243, 19);
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  color: rgb(94, 255, 0);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  border: dashed 2px #f8950a; /*破線*/
+  border-radius: 9px;
+  margin-left: 10px; /*はみ出ないように調整*/
+  margin-right: 10px; /*はみ出ないように調整*/
+  padding: 0.5em 0.5em 0.5em 2em;
+  color: rgb(236, 240, 11);
+}
